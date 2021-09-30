@@ -16,6 +16,19 @@ function dateEuropeanFormat($inDate) {
 	return date_format($inDate,"d/m/Y");
 }
 
+function displayStringInfo($inString) {
+	echo "Number of Characters: " . strlen($inString) . "<br>";
+	trim($inString);
+	echo strtolower($inString) . "<br>";
+		
+	echo "Contains 'DMACC'?: ";
+		if (stristr($inString, "DMACC") != false) {
+			echo "TRUE";
+		} else {
+			echo "FALSE";
+		}
+}
+
 function formatPhoneNum($inPhoneNum) {
 	if (strlen($inPhoneNum) == 10) {
 		echo "(" . substr($inPhoneNum, 0, 3) . ") " . substr($inPhoneNum, 3, 3) . "-" . substr($inPhoneNum, 6);
@@ -35,23 +48,6 @@ function formatUSCurrency($inCurrency) {
 		<title>PHP Functions</title>
 		
 	</head>
-	
-	<?php
-	
-	function displayStringInfo($inString) {
-		echo "Number of Characters: " . strlen($inString) . "<br>";
-		trim($inString);
-		echo strtolower($inString) . "<br>";
-		
-		echo "Contains 'DMACC'?: ";
-		if (stristr($inString, "DMACC") != false) {
-			echo "TRUE";
-		} else {
-			echo "FALSE";
-		}
-	}
-	
-	?>
 
 	<body>
 		
