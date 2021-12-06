@@ -1,0 +1,263 @@
+/* CSS Document */
+
+main {
+	background-color: rgba(227, 209, 199, 0.8);
+}
+
+main nav {
+	background-color: #E15685;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+main nav ul {
+	font-family: "report", sans-serif;
+	font-size: 1.5vw;
+	list-style: none;
+	margin: 0;
+}
+
+main nav ul li {
+	width: 10%;
+}
+
+main nav div.menu {
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+}
+
+main nav ul li a, main nav ul li a:visited {
+	color: #FFC2D6;
+	text-decoration: none;
+}
+
+main nav input[type=checkbox] {
+	display: none;
+}
+
+main nav .hamburger {
+	display: none;
+	user-select: none;
+}
+
+div.product_banner {
+	position: relative;
+}
+
+div.product_banner h1 {
+	font-family: "ruddy", sans-serif;
+	font-size: 4vw;
+	font-weight: 400;
+	color: #FFC2D6;
+	text-shadow: -2px -2px 5px rgba(33, 17, 12, 0.8),
+				 2px -2px 5px rgba(33, 17, 12, 0.8),
+				 -2px 2px 5px rgba(33, 17, 12, 0.8),
+				 2px 2px 5px rgba(33, 17, 12, 0.8);
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+div.product_banner img {
+	width: 100%;
+}
+
+div.mobile_banner {
+	display: none;
+}
+
+#container {
+	width: 85%;
+	display: grid;
+	grid-template-columns: 27% 27% 27%;
+	grid-column-gap: 10%;
+	grid-row-gap: 5%;
+	margin-top: 50px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#container div:last-of-type {
+	margin-bottom: 600px;
+}
+
+#container div img:first-of-type {
+	width: 100%;
+}
+
+#container h2, #container p, #container form {
+	font-family: "report", sans-serif;
+	color: #21110C;
+}
+
+#container h2, #container p:last-of-type {
+	text-align: center;
+}
+
+#container h2 {
+	font-size: 2vw;
+}
+
+#container p:first-of-type {
+	font-size: 1.25vw;
+}
+
+#container p:nth-of-type(2) {
+	font-size: 1.15vw;
+}
+
+main form, main p {
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+main form table {
+	width: 100%;
+}
+
+main form table input, form table select {
+	width: 100%;
+}
+
+main form table td {
+	font-size: 1.25vw
+}
+
+main form table select {
+	font-size: 1.0vw;
+	margin-bottom: 10px;
+}
+
+main form table input[type=text] {
+	font-size: 1.0vw;
+}
+
+main form input[type=image] {
+	width: 100%;
+	margin-top: 5%;
+}
+
+@media only screen and (max-width: 900px) {
+	
+	#container {
+		grid-template-columns: 42.5% 42.5%;
+		grid-row-gap: 2%;
+		justify-content: space-between;
+	}
+	
+	#container h2 {
+		font-size: 3.0vw;
+	}
+
+	#container p:first-of-type {
+		font-size: 2.25vw;
+	}
+
+	#container p:nth-of-type(2) {
+		font-size: 2.15vw;
+	}
+	
+	main form table td {
+		font-size: 2.75vw
+	}
+	
+	main form table select {
+		font-size: 1.75vw;
+	}
+	
+}
+
+@media only screen and (max-width: 640px) {
+	
+	div.product_banner {
+		display: none;
+	}
+	
+	div.mobile_banner {
+		display: block;
+	}
+	
+	div.mobile_banner img {
+		width: 100%;
+	}
+	
+	div.mobile_banner h1 {
+		color: #21110C;
+		font-family: "report", sans-serif;
+		font-size: 7.0vw;
+		text-align: center;
+		padding-top: 20px;
+		margin-bottom: 0;
+	}
+	
+	main nav {
+		padding-top: 5%;
+		padding-bottom: 5%;
+		margin-top: -5px;
+	}
+	
+	main nav ul li {
+		width: 100%;
+	}
+	
+	main nav div.menu {
+		display: none;
+		background-color: #E15685;
+		font-size: 5.0vw;
+		text-align: center;
+		position: absolute;
+		right: 0;
+		left: 0;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	
+	main nav div.menu li + li {
+		margin-top: 12px;
+	}
+	
+	main input[type=checkbox]:checked ~ div.menu {
+		display: block;
+	}
+	
+	main nav .hamburger {
+		display: block;
+		color: #FFC2D6;
+		text-align: right;
+		font-size: 5.0vw;
+		margin-right: 10%;
+	}
+	
+	main nav .hamburger span {
+		margin-right: 30%;
+	}
+	
+	#container {
+		grid-template-columns: 100%;
+		padding-bottom: 200px;
+	}
+	
+	#container h2 {
+		font-size: 4.5vw;
+	}
+
+	#container p:first-of-type {
+		font-size: 3.75vw;
+	}
+
+	#container p:nth-of-type(2) {
+		font-size: 3.65vw;
+	}
+	
+	main form table td {
+		font-size: 3.75vw
+	}
+	
+	main form table select {
+		font-size: 2.75vw;
+	}
+	
+}

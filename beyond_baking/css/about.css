@@ -1,0 +1,54 @@
+/* CSS Document */
+
+main {
+	background-color: #F599B7;
+	font-family: "report", sans-serif;
+	display: flex;
+	max-height: auto;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+main section {
+	width: 50%;
+}
+
+main section:first-of-type img {
+	width: 90%;
+	align-self: center;
+	margin-top: -1px;
+}
+
+main section:last-of-type {
+	padding: 5%;
+}
+
+main h2 {
+	font-size: 4vw;
+	text-align: center;
+}
+
+main p {
+	font-size: 1.5vw;
+}
+
+footer {
+	margin-top: -4px;
+}
+
+@media only screen and (max-width: 640px) {
+	main {
+		flex-direction: column;
+	}
+	
+	main section {
+		width: 100%;
+	}
+	
+	main section:first-of-type img {
+		width: 100%;
+	}
+}

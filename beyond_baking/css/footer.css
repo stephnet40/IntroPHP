@@ -1,0 +1,148 @@
+/* CSS Document */
+
+footer {
+	background-color: #A6553C;
+	color: #21110C;
+	font-family: "report", sans-serif;
+	font-size: 1.8vw;
+	display: grid;
+	grid-template-columns: 30% 30% 30%;
+	justify-content: center;
+}
+
+footer div.hours_location {
+	line-height: 0.5;
+}
+
+footer div.hours_location div:first-of-type {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-row-gap: 10px;
+	margin-top: 40px;
+	margin-bottom: 60px;
+}
+
+footer div.hours_location div:first-of-type p {
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+
+footer div.logo_social_icons {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+footer div.logo_social_icons div:first-of-type img {
+	width: 100%;
+}
+
+footer div.logo_social_icons div:last-of-type {
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+}
+
+footer div.logo_social_icons a {
+	margin: 20%;
+}
+
+footer div.logo_social_icons a img {
+	width: 100%;
+	max-width: 50px;
+}
+
+footer div.mobile {
+	display: none;
+}
+
+#copyright {
+	grid-column: 1 / span 3;
+	text-align: center;
+	font-size: 1.3vw;
+}
+
+footer ul {
+	margin-top: 5%;
+}
+
+footer ul li {
+	list-style-type: none;
+}
+
+footer ul li a, footer ul li a:visited {
+	color: #21110C;
+	text-decoration: none;
+}
+
+footer div.cart input[type=image] {
+	width: 30%;
+	margin-left: 8.5%;
+}
+
+@media only screen and (max-width: 640px) {
+	
+	footer {
+		grid-template-columns: 100%;
+	}
+	
+	footer div {
+		text-align: center;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	
+	footer div.logo_social_icons {
+		grid-row-start: 1;
+	}
+	
+	footer div.logo_social_icons div:first-of-type img {
+		width: 80%;
+	}
+	
+	footer div.hours_location {
+		font-size: 4.5vw;
+	}
+	
+	footer div.hours_location div:first-of-type {
+		margin-top: 0;
+	}
+	
+	footer div.hours_location div:nth-of-type(2) {
+		margin-bottom: 10px;
+	}
+	
+	/* Moving social icons underneath hours/location */
+	footer div.logo_social_icons div.desktop {
+		display: none;
+	}
+
+	footer div.mobile {
+		display: block;
+	}
+	
+	footer div.mobile {
+		display: grid;
+		grid-template-columns: 33% 33% 33%;
+	}
+
+	footer div.mobile a {
+		margin: 20%;
+	}
+
+	footer div.mobile a img {
+		width: 100%;
+		max-width: 50px;
+	}
+	/* End social icons */
+	
+	footer div.footer_nav {
+		display: none;
+	}
+	
+	#copyright {
+		grid-column: 1 / span 1;
+		font-size: 2.8vw;
+		width: 90%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}

@@ -1,0 +1,356 @@
+<!doctype html>
+<html>
+	<head>
+		
+		<title>Beyond Baking</title>
+		
+		<meta name="author" content="Stephanie Thompson">
+		<meta name="description" content="Beyond Baking homepage. Website intended for web dev educational purposes only.">
+		<meta name="keywords" content="DMACC web development, web development, web dev, wdv351, website application components, bakery, gluten free, gluten free bakery, beyond baking">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<script src="javascript/copyright.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> <!-- Bootstrap for carousel -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> <!-- Bootstrap for carousel -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> <!-- Bootstrap for carousel -->
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Hamburger menu icon -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> <!-- Bootstrap for carousel -->
+		<link rel="stylesheet" href="https://use.typekit.net/bma2hgu.css"> <!-- Adobe fonts -->
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/footer.css">
+		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="stylesheet" href="css/index.css">
+		
+	</head>
+
+	<body>
+		
+		<header>
+			
+			<a href="index.html"><div>
+				<!-- Logo / Name -->
+				
+				<img src="images/logo_name.png" alt="Cupcake logo with cherry and bow">
+				
+			</div></a>
+			
+			<nav>
+				
+				<ul>
+					<input type="checkbox" id="checkbox_toggle">
+					<label for="checkbox_toggle" class="hamburger"><i class="fa fa-bars"></i></label>
+					
+					<div class="menu">
+						<li><a href="about.html">Our Story</a></li>
+						<li><a href="bakery/cakes_cupcakes.html">The Bakery</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+					</div>
+				</ul>
+				
+			</nav>
+			
+			<div class="cart">
+					
+					<form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" >
+						<input type="hidden" name="cmd" value="_s-xclick">
+						<input type="hidden" name="shopping_url" value="https://stephrt.com/portfolio/beyond_baking/bakery/cakes_cupcakes.html">
+						<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+						<input type="image" src="images/cart.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+						<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+					</form>
+				
+			</div>
+			
+			<div class="cart_mobile">
+				
+				<form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" >
+						<input type="hidden" name="cmd" value="_s-xclick">
+						<input type="hidden" name="shopping_url" value="https://stephrt.com/portfolio/beyond_baking/bakery/cakes_cupcakes.html">
+						<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+						<input type="image" src="images/cart_mobile.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+						<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+					</form>
+				
+			</div>
+			
+			<div class="welcome_header"> <!-- Welcome Header -->
+			
+					<div>
+						<p>
+							Don't settle for bland.<br>
+							Go beyond expectations and savor that tasty treat you deserve!<br>
+							Gluten Free Guaranteed!
+						</p>
+					</div>
+
+				<img src="images/home/home_header.png">
+			
+			</div>
+			
+		</header>
+		
+		
+		<main>
+			
+			<div id="small_mobile_carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+				<!-- Features Carousel -->
+				<ol class="carousel-indicators">
+					<li data-target="#small_mobile_carousel" data-slide-to="0" class="active"></li>
+					<li data-target="#small_mobile_carousel" data-slide-to="1"></li>
+					<li data-target="#small_mobile_carousel" data-slide-to="2"></li>
+				 </ol>
+				
+				<div class="carousel-inner">
+					<div class="carousel-item active feature_flavor">
+						<a href="bakery/feature_flavor.html"><button>Order Now</button></a>
+						<img src="images/mobile/flavor_mobile_small.png" alt="Pumpkin spice cake">
+					</div>
+					
+					<div class="carousel-item custom_order">
+						<a href="contact.html"><button>Order Now</button></a>
+						<img src="images/mobile/custom_order_mobile_small.png" alt="Wedding cake">
+					</div>
+					
+					<div class="carousel-item cookbook">
+						<a href="cookbook/cookbook.html"><button>Order Now</button></a>
+						<img src="images/mobile/cookbook_mobile_small.png" alt="Open cookbook">
+					</div>
+				</div>
+				
+				<a class="carousel-control-prev" href="#small_mobile_carousel" role="button" data-slide="prev">
+    				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    				<span class="sr-only">Previous</span>
+  				</a>
+  				<a class="carousel-control-next" href="#small_mobile_carousel" role="button" data-slide="next">
+    				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    				<span class="sr-only">Next</span>
+  				</a>
+				
+			</div>
+			
+			<div id="mobile_carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+				<!-- Features Carousel -->
+				<ol class="carousel-indicators">
+					<li data-target="#mobile_carousel" data-slide-to="0" class="active"></li>
+					<li data-target="#mobile_carousel" data-slide-to="1"></li>
+					<li data-target="#mobile_carousel" data-slide-to="2"></li>
+				 </ol>
+				
+				<div class="carousel-inner">
+					<div class="carousel-item active feature_flavor">
+						<a href="bakery/feature_flavor.html"><button>Order Now</button></a>
+						<img src="images/mobile/flavor_mobile.png" alt="Pumpkin spice cake">
+					</div>
+					
+					<div class="carousel-item custom_order">
+						<a href="contact.html"><button>Order Now</button></a>
+						<img src="images/mobile/custom_order_mobile.png" alt="Wedding cake">
+					</div>
+					
+					<div class="carousel-item cookbook">
+						<a href="cookbook/cookbook.html"><button>Order Now</button></a>
+						<img src="images/mobile/cookbook_mobile.png" alt="Open cookbook">
+					</div>
+				</div>
+				
+				<a class="carousel-control-prev" href="#mobile_carousel" role="button" data-slide="prev">
+    				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    				<span class="sr-only">Previous</span>
+  				</a>
+  				<a class="carousel-control-next" href="#mobile_carousel" role="button" data-slide="next">
+    				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    				<span class="sr-only">Next</span>
+  				</a>
+				
+			</div>
+			
+			<section id="features_carousel" class="carousel slide" data-ride="carousel">
+				<!-- Features Carousel -->
+				<ol class="carousel-indicators">
+					<li data-target="#features_carousel" data-slide-to="0" class="active"></li>
+					<li data-target="#features_carousel" data-slide-to="1"></li>
+					<li data-target="#features_carousel" data-slide-to="2"></li>
+				 </ol>
+				
+				<div class="carousel-inner">
+					<div class="carousel-item active feature_flavor">
+						<a href="bakery/feature_flavor.html"><button>Order Now</button></a>
+						<img src="images/home/flavor_of_the_month.png" alt="Pumpkin spice cake">
+					</div>
+					
+					<div class="carousel-item custom_order">
+						<a href="contact.html"><button>Order Now</button></a>
+						<img src="images/home/custom_order.png" alt="Wedding cake">
+					</div>
+					
+					<div class="carousel-item cookbook">
+						<a href="cookbook/cookbook.html"><button>Order Now</button></a>
+						<img src="images/home/cookbook.png" alt="Open cookbook">
+					</div>
+				</div>
+				
+				<a class="carousel-control-prev" href="#features_carousel" role="button" data-slide="prev">
+    				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    				<span class="sr-only">Previous</span>
+  				</a>
+  				<a class="carousel-control-next" href="#features_carousel" role="button" data-slide="next">
+    				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    				<span class="sr-only">Next</span>
+  				</a>
+				
+			</section>
+			
+			<section>
+				
+				<div>
+					<!-- Bread & Pastries -->
+					
+					<a href="bakery/bread_pastries.html"><img src="images/home/bread_pastries_category.png" alt="Bread and Pastries"></a>
+					
+				</div>
+				
+				<div>
+					<!-- Cakes & Cupcakes -->
+					
+					<a href="bakery/cakes_cupcakes.html"><img src="images/home/cakes_cupcakes_category.png" alt="Cakes and Cupcakes"></a>
+					
+				</div>
+				
+				<div>
+					<!-- Cookies & Brownies -->
+					
+					<a href="bakery/cookies_brownies.html"><img src="images/home/cookies_brownies_category.png" alt="Cookies and Brownies"></a>
+					
+				</div>
+				
+			</section>
+			
+			<section>
+				
+				<div>
+					<img src="images/home/woman_smiling.png" alt="Woman smiling while holding pastry">
+				</div>
+				
+				<div>
+					<img src="images/home/cake_decorating.png" alt="Woman decorating cake">
+				</div>
+				
+				<div>
+					<img src="images/home/girl_display.png" alt="Little girl looking at display case">
+				</div>
+				
+			</section>
+			
+			<div id="gallery_carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+				<!-- Features Carousel -->
+				<ol class="carousel-indicators">
+					<li data-target="#gallery_carousel" data-slide-to="0" class="active"></li>
+					<li data-target="#gallery_carousel" data-slide-to="1"></li>
+					<li data-target="#gallery_carousel" data-slide-to="2"></li>
+				 </ol>
+				
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="images/home/woman_smiling.png" alt="Pumpkin spice cake">
+					</div>
+					
+					<div class="carousel-item">
+						<img src="images/home/cake_decorating.png" alt="Wedding cake">
+					</div>
+					
+					<div class="carousel-item">
+						<img src="images/home/girl_display.png" alt="Open cookbook">
+					</div>
+				</div>
+				
+				<a class="carousel-control-prev" href="#gallery_carousel" role="button" data-slide="prev">
+    				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    				<span class="sr-only">Previous</span>
+  				</a>
+  				<a class="carousel-control-next" href="#gallery_carousel" role="button" data-slide="next">
+    				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    				<span class="sr-only">Next</span>
+  				</a>
+				
+			</div>
+			
+		</main>
+		
+		<footer>
+			
+			<div class="hours_location">
+				<!-- Hours / Location -->
+				
+				<div>
+					<p>Mon to Fri</p> <p>10 AM - 5 PM</p>
+					<p>Sat</p> <p>10 AM - 2 PM</p>
+					<p>Sun</p> <p>Closed</p>
+				</div>
+				
+				<div>
+					<p>2977 Jenna Lane</p>
+					<p>West Des Moines, IA 50266</p>
+					<p>(515) 221 - 4251</p>
+				</div>
+				
+				<div class="mobile">
+					<a href="https://www.facebook.com/"><img src="images/social media/facebook.png" alt="Facebook"></a>
+					<a href="https://twitter.com/"><img src="images/social media/twitter.png" alt="Twitter"></a>
+					<a href="https://www.instagram.com/"><img src="images/social media/instagram.png" alt="Instagram"></a>
+				</div>
+				
+			</div>
+			
+			<div class="logo_social_icons">
+				<!-- Logo / Social Media -->
+				
+				<div>
+					
+					<img src="images/logo_name.png" alt="Cupcake logo with cherry and bow">
+					
+				</div>
+				
+				<div class="desktop">
+					<a href="https://www.facebook.com/"><img src="images/social media/facebook.png" alt="Facebook"></a>
+					<a href="https://twitter.com/"><img src="images/social media/twitter.png" alt="Twitter"></a>
+					<a href="https://www.instagram.com/"><img src="images/social media/instagram.png" alt="Instagram"></a>
+				</div>
+				
+			</div>
+			
+			<div class="footer_nav">
+				<!-- Footer Navigation -->
+				
+				<div>
+					
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">Our Story</a></li>
+						<li><a href="bakery/cakes_cupcakes.html">The Bakery</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+					</ul>
+					
+				</div>
+				
+				<div class="cart">
+					<form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" >
+						<input type="hidden" name="cmd" value="_s-xclick">
+						<input type="hidden" name="shopping_url" value="https://stephrt.com/portfolio/beyond_baking/bakery/cakes_cupcakes.html">
+						<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+						<input type="image" src="images/cart.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+						<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+					</form>
+					
+				</div>
+				
+			</div>
+			
+			<p id="copyright"><script>copyrightStatement();</script></p>
+			
+		</footer>
+				
+	</body>
+</html>

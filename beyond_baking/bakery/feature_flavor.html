@@ -1,0 +1,349 @@
+<!doctype html>
+<html>
+	<head>
+		
+		<title>The Bakery | Cakes &amp; Cupcakes</title>
+		
+		<meta name="author" content="Stephanie Thompson">
+		<meta name="description" content="Beyond Baking flavor of the month. Website intended for web dev educational purposes only.">
+		<meta name="keywords" content="DMACC web development, web development, web dev, wdv351, website application components, bakery, gluten free, gluten free bakery, beyond baking">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<script src="../javascript/copyright.js"></script>
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Hamburger menu icon -->
+		<link rel="stylesheet" href="https://use.typekit.net/bma2hgu.css"> <!-- Adobe fonts -->
+		<link rel="stylesheet" href="../css/main.css">
+		<link rel="stylesheet" href="../css/header.css">
+		<link rel="stylesheet" href="../css/footer.css">
+		<link rel="stylesheet" href="../css/products.css">
+		<link rel="stylesheet" href="css/fonts.css">
+		
+	</head>
+
+	<body>
+		
+		<header>
+			
+			<a href="../index.html"><div>
+				<!-- Logo / Name -->
+				
+				<img src="../images/logo_name.png" alt="Cupcake logo with cherry and bow">
+				
+			</div></a>
+			
+			<nav>
+				
+				<ul>
+					<input type="checkbox" id="checkbox_toggle">
+					<label for="checkbox_toggle" class="hamburger"><i class="fa fa-bars"></i></label>
+					
+					<div class="menu">
+						<li><a href="../about.html">Our Story</a></li>
+						<li><a href="../bakery/cakes_cupcakes.html">The Bakery</a></li>
+						<li><a href="../contact.html">Contact Us</a></li>
+					</div>
+				</ul>
+				
+			</nav>
+			
+			<div class="cart">
+					
+					<form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" >
+						<input type="hidden" name="cmd" value="_s-xclick">
+						<input type="hidden" name="shopping_url" value="https://stephrt.com/portfolio/beyond_baking/bakery/cakes_cupcakes.html">
+						<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+						<input type="image" src="../images/cart.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+						<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+					</form>
+				
+			</div>
+			
+			<div class="cart_mobile">
+				
+				<form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" >
+						<input type="hidden" name="cmd" value="_s-xclick">
+						<input type="hidden" name="shopping_url" value="https://stephrt.com/portfolio/beyond_baking/bakery/cakes_cupcakes.html">
+						<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+						<input type="image" src="../images/cart_mobile.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+						<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+					</form>
+				
+			</div>
+			
+		</header>
+		
+		<main>
+			
+			<div class="mobile_banner">
+				
+				<img src="../images/mobile/feature_mobile_banner.png" alt="Cake banner">
+				
+			</div>
+			
+			<nav>
+				
+				<ul>
+					<input type="checkbox" id="secondary_checkbox_toggle">
+					<label for="secondary_checkbox_toggle" class="hamburger"><span>The Bakery</span><i class="fa fa-bars"></i></label>
+					<div class="menu">
+						<li><a href="bread_pastries.html">Bread & Pastries</a></li>
+						<li><a href="cakes_cupcakes.html">Cakes & Cupcakes</a></li>
+						<li><a href="cookies_brownies.html">Cookies & Brownies</a></li>
+					</div>
+				</ul>
+				
+			</nav>
+			
+			<div class="product_banner">
+				
+				<h1>Flavor of the Month</h1>
+				
+				<img src="../images/flavor_banner.png" alt="Pumpkin Cake banner">
+				
+			</div>
+			
+			<div class="mobile_banner">
+				
+				<h1>Flavor of the Month</h1>
+				
+			</div>
+			
+			<div id="container">
+
+				<div>
+					<!-- Classic Cupcakes -->
+
+					<img src="../images/cakes_cupcakes/classic_cupcakes.png" alt="Frosted cupcakes">
+
+					<h2>Classic Cupcakes</h2>
+
+					<p>
+						Cupcakes for any occasion! Comes in either white or chocolate and topped with buttercream frosting.
+					</p>
+
+					<p>$9.00 - $24.00</p>
+
+					<form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+						<input type="hidden" name="cmd" value="_s-xclick">
+						<input type="hidden" name="hosted_button_id" value="GFKNX9VLNK676">
+						<table>
+						<tr><td><input type="hidden" name="on1" value="Flavor">Flavor</td></tr><tr><td><select name="os1">
+							<option value="White">White </option>
+							<option value="Chocolate">Chocolate </option>
+							<option value="Strawberry">Strawberry </option>
+							<option value="Pumpkin Spice">Pumpkin Spice </option>
+						</select> </td></tr>
+						<tr><td><input type="hidden" name="on0" value="Amount">Amount</td></tr><tr><td><select name="os0">
+							<option value="Half Dozen">Half Dozen $9.00 USD</option>
+							<option value="Dozen">Dozen $16.00 USD</option>
+							<option value="Two Dozen">Two Dozen $24.00 USD</option>
+						</select> </td></tr>
+						</table>
+						<input type="hidden" name="currency_code" value="USD">
+						<input type="image" src="../images/add_to_cart.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+						<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+					</form>
+
+				</div>
+
+				<div>
+					<!-- Classic Sheet Cake -->
+
+					<img src="../images/cakes_cupcakes/classic_sheet_cake.png" alt="Decorated sheet cake">
+
+					<h2>Classic Sheet Cake</h2>
+
+					<p>
+						A classic sheet cake decorated with buttercream frosting, perfect for any event. Customized messages available.
+					</p>
+
+					<p>$20.00 - $30.00</p>
+
+					<form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+						<input type="hidden" name="cmd" value="_s-xclick">
+						<input type="hidden" name="hosted_button_id" value="RWACDPFNXTEUE">
+						<table>
+						<tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+							<option value="7 inches x 13 inches">7" x 13" $20.00 USD</option>
+							<option value="9 inches x 15 inches">9" x 15" $25.00 USD</option>
+							<option value="11 inches x 17 inches">11" x 17" $30.00 USD</option>
+						</select> </td></tr>
+						<tr><td><input type="hidden" name="on1" value="Flavor">Flavor</td></tr><tr><td><select name="os1">
+							<option value="White">White </option>
+							<option value="Chocolate">Chocolate </option>
+							<option value="Strawberry">Strawberry </option>
+							<option value="Pumpkin Spice">Pumpkin Spice </option>
+						</select> </td></tr>
+						<tr><td><input type="hidden" name="on2" value="Custom Message">Custom Message</td></tr><tr><td><input type="text" name="os2" maxlength="200"></td></tr>
+						</table>
+						<input type="hidden" name="currency_code" value="USD">
+						<input type="image" src="../images/add_to_cart.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+						<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+					</form>
+
+				</div>
+
+				<div>
+					<!-- Deluxe Sheet Cake -->
+
+					<img src="../images/cakes_cupcakes/deluxe_sheet_cake.png" alt="Deluxe decorated sheet cake">
+
+					<h2>Deluxe Sheet Cake</h2>
+
+					<p>
+						Expertly decorated sheet cakes with a theme of your choice. Choose a customized message to perfectly match your needs.
+					</p>
+
+					<p>$25.00 - $35.00</p>
+
+					<form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+						<input type="hidden" name="cmd" value="_s-xclick">
+						<input type="hidden" name="hosted_button_id" value="T3QYWGCC3DBAN">
+						<table>
+						<tr><td><input type="hidden" name="on1" value="Flavor">Flavor</td></tr><tr><td><select name="os1">
+							<option value="White">White </option>
+							<option value="Chocolate">Chocolate </option>
+							<option value="Strawberry">Strawberry </option>
+							<option value="Pumpkin Spice">Pumpkin Spice </option>
+						</select> </td></tr>
+						<tr><td><input type="hidden" name="on2" value="Theme">Theme</td></tr><tr><td><select name="os2">
+							<option value="Unicorn">Unicorn </option>
+							<option value="Mermaid">Mermaid </option>
+							<option value="Pirate">Pirate </option>
+							<option value="Dragon">Dragon </option>
+						</select> </td></tr>
+						<tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+							<option value="7 inches x 13 inches">7" x 13" $20.00 USD</option>
+							<option value="9 inches x 15 inches">9" x 15" $25.00 USD</option>
+							<option value="11 inches x 17 inches">11" x 17" $30.00 USD</option>
+						</select> </td></tr>
+						<tr><td><input type="hidden" name="on3" value="Custom Message">Custom Message</td></tr><tr><td><input type="text" name="os3" maxlength="200"></td></tr>
+						</table>
+						<input type="hidden" name="currency_code" value="USD">
+						<input type="image" src="../images/add_to_cart.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+						<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+					</form>
+
+
+				</div>
+
+				<div>
+					<!-- Patterned Sheet Cake -->
+
+					<img src="../images/cakes_cupcakes/patterned_sheet_cake.png" alt="Patterned sheet cake">
+
+					<h2>Patterned Sheet Cake</h2>
+
+					<p>
+						These sheet cakes are meticulously decorated with buttercream frosting to create a beautiful pattern covering the whole cake.
+					</p>
+
+					<p>$23.00 - $33.00</p>
+
+					<form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+						<input type="hidden" name="cmd" value="_s-xclick">
+						<input type="hidden" name="hosted_button_id" value="PDT4PPNX22TZQ">
+						<table>
+						<tr><td><input type="hidden" name="on1" value="Flavor">Flavor</td></tr><tr><td><select name="os1">
+							<option value="White">White </option>
+							<option value="Chocolate">Chocolate </option>
+							<option value="Strawberry">Strawberry </option>
+							<option value="Pumpkin Spice">Pumpkin Spice </option>
+						</select> </td></tr>
+						<tr><td><input type="hidden" name="on2" value="Design">Design</td></tr><tr><td><select name="os2">
+							<option value="Scaled">Scaled </option>
+							<option value="Roses">Roses </option>
+						</select> </td></tr>
+						<tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+							<option value="7 inches x 13 inches">7" x 13" $23.00 USD</option>
+							<option value="9 inches x 15 inches">9" x 15" $28.00 USD</option>
+							<option value="11 inches x 17 inches">11" x 17" $33.00 USD</option>
+						</select> </td></tr>
+						</table>
+						<input type="hidden" name="currency_code" value="USD">
+						<input type="image" src="../images/add_to_cart.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+						<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+					</form>
+
+				</div>
+
+			</div>
+			
+		</main>
+		
+		<footer>
+			
+			<div class="hours_location">
+				<!-- Hours / Location -->
+				
+				<div>
+					<p>Mon to Fri</p> <p>10 AM - 5 PM</p>
+					<p>Sat</p> <p>10 AM - 2 PM</p>
+					<p>Sun</p> <p>Closed</p>
+				</div>
+				
+				<div>
+					<p>2977 Jenna Lane</p>
+					<p>West Des Moines, IA 50266</p>
+					<p>(515) 221 - 4251</p>
+				</div>
+				
+				<div class="mobile">
+					<a href="https://www.facebook.com/"><img src="../images/social media/facebook.png" alt="Facebook"></a>
+					<a href="https://twitter.com/"><img src="../images/social media/twitter.png" alt="Twitter"></a>
+					<a href="https://www.instagram.com/"><img src="../images/social media/instagram.png" alt="Instagram"></a>
+				</div>
+				
+			</div>
+			
+			<div class="logo_social_icons">
+				<!-- Logo / Social Media -->
+				
+				<div>
+					
+					<img src="../images/logo_name.png" alt="Cupcake logo with cherry and bow">
+					
+				</div>
+				
+				<div class="desktop">
+					<a href="https://www.facebook.com/"><img src="../images/social media/facebook.png" alt="Facebook"></a>
+					<a href="https://twitter.com/"><img src="../images/social media/twitter.png" alt="Twitter"></a>
+					<a href="https://www.instagram.com/"><img src="../images/social media/instagram.png" alt="Instagram"></a>
+				</div>
+				
+			</div>
+			
+			<div class="footer_nav">
+				<!-- Footer Navigation / Login -->
+				
+				<div>
+					
+					<ul>
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="../about.html">Our Story</a></li>
+						<li><a href="../bakery/cakes_cupcakes.html">The Bakery</a></li>
+						<li><a href="../contact.html">Contact Us</a></li>
+					</ul>
+					
+				</div>
+				
+				<div class="cart">
+					<form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" >
+						<input type="hidden" name="cmd" value="_s-xclick">
+						<input type="hidden" name="shopping_url" value="https://stephrt.com/portfolio/beyond_baking/bakery/cakes_cupcakes.html">
+						<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+						<input type="image" src="../images/cart.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+						<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+					</form>
+
+				</div>
+				
+			</div>
+			
+			<p id="copyright"><script>copyrightStatement();</script></p>
+			
+		</footer>
+		
+	</body>
+</html>

@@ -1,0 +1,239 @@
+/* CSS Document */
+
+main div.contact_banner {
+	position: relative;
+}
+
+main div.contact_banner h2 {
+	font-family: "centuryGothic", sans-serif;
+	font-size: 2.2vw;
+	color: #21110C;
+	text-shadow: 2px 2px 2px #FFC2D6;
+	position: absolute;
+	top: 60%;
+	left: 15%;
+}
+
+main div.contact_banner img {
+	width: 100%;
+}
+
+main {
+	background-color: rgba(0, 208, 214, 0.6);
+	color: #21110C;
+	font-family: "report", sans-serif;
+}
+
+main section:first-of-type {
+	width: 80%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+main section:first-of-type div {
+	background-color: white;
+	width: 50%;
+	padding: 1%;
+	margin-top: 30px;
+	margin-right: 5%;
+	margin-bottom: 30px;
+	margin-left: 5%;
+}
+
+main section:first-of-type div div {
+	width: 100%;
+	border: 5px solid #E15685;
+	margin: 0;
+}
+
+main section:first-of-type div:first-of-type {
+	align-self: center;
+}
+
+main section:last-of-type {
+	background-color: #F599B7;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+main form {
+	background-color: #E3D1C7;
+	font-size: 1.25vw;
+	width: 95%;
+	display: grid;
+	grid-template-columns: 48% 48%;
+	justify-content: space-between;
+	border-radius: 35px;
+	padding-right: 8%;
+	padding-left: 8%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+main form p {
+	grid-column: 1 / span 2;
+	text-align: center;
+}
+
+main form div.user_info {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+
+main form input[type=text], main form textarea, main form select, main form button, main form input[type=reset] {
+	border: 1px solid rgba(166, 85, 60, 0.6);
+	border-radius: 5px;
+}
+
+main form input[type=submit] {
+	display: none;
+}
+
+main form input[type=text], main form select {
+	width: 80%;
+	height: 30px;
+	margin-left: 3%;
+}
+
+main form select {
+	font-family: "report", sans-serif;
+	font-size: 0.9vw;
+}
+
+main form div.message, main form div.submit_form {
+	grid-column: 1 / span 2;
+}
+
+main form div.message label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+main form textarea {
+	width: 100%;
+	height: 300px;
+	resize: none;
+}
+
+main form div.submit_form {
+	justify-self: end;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+main form div.g-recaptcha {
+	grid-column: 1 / span 2;
+}
+
+main form button, main form input[type=reset] {
+	font-family: "report", sans-serif;
+	color: #21110C;
+	font-size: 1.1vw;
+	width: 90%;
+	height: 30px;
+	margin-top: 10px;
+}
+
+main form input[type=reset] {
+	justify-self: end;
+}
+
+@media only screen and (max-width: 640px) {
+	
+	main div.contact_banner h2 {
+		font-size: 7.5vw;
+		top: 10%;
+		left: 5%;
+	}
+	
+	main section:first-of-type {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	main section:first-of-type div {
+		width: 100%;
+	}
+	
+	main form {
+		grid-template-columns: 100%;
+		justify-content: center;
+	}
+	
+	main form p, main form div.message, main form div.submit_form, main form div.g-recaptcha {
+		grid-column: 1 / span 1;
+		width: 100%;
+	}
+	
+	main form p {
+		font-size: 4vw;
+		padding-top: 5%;
+		padding-bottom: 5%;
+		margin-top: -5%;
+	}
+	
+	main form div.user_info {
+		flex-direction: column;
+	}
+	
+	main form div.user_info label {
+		align-self: flex-start;
+		margin-bottom: 5px;
+	}
+	
+	main form input[type=text], main form select, main form button, main form input[type=reset] {
+		width: 100%;
+	}
+	
+	main form div.user_info label, main form div.user_info input, main form select, main form div.message label, main form button, main form input[type=reset] {
+		font-size: 4.5vw;
+	}
+	
+	main form div.submit_form {
+		grid-template-columns: 100%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	
+	main form div.g-recaptcha div {
+		margin-right: auto;
+		margin-left: auto;
+	}
+	
+}
+
+@media only screen and (max-width: 384px) {
+	
+	main form div.g-recaptcha {
+		transform: scale(0.9);
+		transform-origin: top left;
+	}
+	
+}
+
+@media only screen and (max-width: 345px) {
+	
+	main form div.g-recaptcha {
+		transform: scale(0.8);
+		transform-origin: top left;
+	}
+	
+}
+
+@media only screen and (max-width: 300px) {
+	
+	main form div.g-recaptcha {
+		transform: scale(0.7);
+		transform-origin: top left;
+	}
+	
+}

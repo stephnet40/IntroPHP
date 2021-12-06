@@ -1,0 +1,15 @@
+/* CSS Document */
+@font-face {
+  font-family: hardwoodLPStd;
+  src: url("fonts/hardwood_lp_std.woff"); 
+}
+
+@font-face {
+	font-family: inkfree;
+	src: url("fonts/Inkfree.woff");
+}
+
+@font-face {
+	font-family: centuryGothic;
+	src: url("fonts/Century Gothic.woff");
+}

@@ -1,0 +1,242 @@
+/* CSS Document */
+header :not(div){
+	position: relative;
+	z-index: 1;
+}
+			
+div.welcome_header {
+	width: 100%;
+	grid-column: 1 / span 3;
+	position: relative;
+	margin-top: -160px;
+}
+			
+div.welcome_header img {
+	width: 100%;
+	position: relative;
+	z-index: 0;
+}
+			
+div.welcome_header p {
+	font-family: "hardwoodLPStd", sans-serif;
+	text-align: center;
+	font-size: 3.4vw;
+	width: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin-top: 10px;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+}
+
+/* Carousels */
+
+main section:first-of-type {
+	position: relative;
+}
+
+#small_mobile_carousel {
+	display: none;
+}
+
+#mobile_carousel {
+	display: none;
+}
+
+main div.carousel-inner a {
+	background-color: #E15685;
+	font-family: "new-spirit", sans-serif;
+	font-size: 1.5vw;
+	padding: 0.5%;
+}
+
+main div.carousel-inner button {
+	background-color: #E15685;
+	cursor: pointer;
+	border: 2px solid #00D0D6;
+}
+
+main div.feature_flavor a {
+	position: absolute;
+	top: 75%;
+	left: 29%;
+}
+
+main div.custom_order a {
+	position: absolute;
+	top: 75%;
+	left: 56%;
+}
+
+main div.cookbook a {
+	position: absolute;
+	top: 69%;
+	left: 26%;
+}
+
+main a.carousel-control-prev, main a.carousel-control-next {
+	width: 5%;
+}
+		
+main section:first-of-type img {
+	width: 100%;
+	margin-top: -4px;
+}
+
+/* Categories */
+
+main section:nth-of-type(2) {
+	background-color: #F599B7;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-top: 7%;
+	padding-bottom: 7%;
+	margin-top: -5px;
+}
+
+main section:nth-of-type(2) div {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+main section:nth-of-type(2) div img {
+	width: 100%;
+}
+
+/* Gallery */
+main section:last-of-type {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+		
+main section:last-of-type img {
+	width: 100%;
+	border: 1px solid #21110C;
+}
+
+#gallery_carousel {
+	display: none;
+}
+			
+footer {
+	margin-top: -5px;
+}
+
+@media only screen and (max-width: 1250px) {
+	
+	div.welcome_header p {
+		top: 60%;
+	}
+	
+	main section:nth-of-type(2) div {
+		width: 30%;
+		align-self: center;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+		
+	header div:not(.welcome_header), header nav {
+		margin-bottom: 20px;
+	}
+		
+}
+
+@media only screen and (max-width: 800px) {
+		
+	header div:not(.welcome_header), header nav {
+		margin-bottom: 30px;
+	}
+		
+}
+
+@media only screen and (max-width: 640px) {
+	
+	header div.welcome_header {
+		display: none;
+	}
+	
+	header div:not(.welcome_header), header nav {
+		margin-bottom: 0;
+	}
+	
+	#features_carousel {
+		display: none;
+	}
+		
+	#mobile_carousel {
+		display: block;
+		margin-top: -5px;
+	}
+	
+	#mobile_carousel div.carousel-inner img {
+		width: 100%;
+	}
+	
+	main div.carousel-inner a {
+		background-color: #E15685;
+		font-family: "new-spirit", sans-serif;
+		font-size: 2vw;
+		padding: 0.5%;
+	}
+	
+	main div.feature_flavor a {
+		position: absolute;
+		top: 78%;
+		left: 43%;
+	}
+
+	main div.custom_order a {
+		position: absolute;
+		top: 78%;
+		left: 43%;
+	}
+
+	main div.cookbook a {
+		position: absolute;
+		top: 78%;
+		left: 43%;
+	}
+	
+	main section:nth-of-type(2) div {
+		width: 90%;
+		align-self: center;
+	}
+	
+	main section:last-of-type {
+		display: none;
+	}
+	
+	#gallery_carousel {
+		display: block;
+	}
+	
+	#gallery_carousel img {
+		width: 100%;
+	}
+	
+	#gallery_carousel .carousel-control-prev-icon, #gallery_carousel .carousel-control-next-icon {
+		background-color: black;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	#mobile_carousel {
+		display: none;
+	}
+	
+	#small_mobile_carousel {
+		display: block;
+		margin-top: -5px;
+	}
+	
+	#small_mobile_carousel div.carousel-inner img {
+		width: 100%;
+	}
+}
+			

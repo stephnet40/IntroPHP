@@ -1,0 +1,86 @@
+/* CSS Document */
+
+main {
+	background-color: #E3D1C7;
+	padding-bottom: 100px;
+}
+
+main img.banner {
+	width: 100%;
+}
+
+main p {
+	font-family: "report", sans-serif;
+	margin-bottom: 0;
+}
+
+main section:first-of-type {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+main section:first-of-type div {
+	width: 50%;
+}
+
+main section:first-of-type img {
+	width: 100%;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+main section:first-of-type div:last-of-type {
+	font-size: 2.0vw;
+	padding: 5%;
+}
+
+main section:last-of-type {
+	text-align: center;
+}
+
+main h1 {
+	font-family: "hardwoodLPStd", sans-serif;
+	font-size: 4vw;
+	color: #21110C;
+}
+
+main h2, main h3 {
+	font-family: "report", sans-serif;
+	color: #21110C;
+}
+
+main input[type=image] {
+	width: 80%;
+	max-width: 250px;
+}
+
+@media only screen and (max-width: 640px) {
+	
+	main section:first-of-type {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	main section:first-of-type div {
+		width: 100%;
+	}
+	
+	main section:first-of-type div img {
+		width: 95%;
+		align-self: center;
+	}
+	
+	main section:first-of-type p {
+		font-size: 4vw;
+	}
+	
+	main h1 {
+		font-size: 6.5vw;
+	}
+	
+	main h2, main h3 {
+		font-size: 5.5vw;
+	}
+	
+}
