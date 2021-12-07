@@ -5,6 +5,8 @@ session_start();
 session_unset();
 session_destroy();
 
+header("Location: login.php");
+
 ?>
 
 
@@ -15,10 +17,6 @@ session_destroy();
 	</head>
 
 	<body>
-		
-		<h3>Logout Successful!</h3>
-		
-		<p><a href="login.php">Return to Login</a></p>
 		
 	</body>
 </html>
