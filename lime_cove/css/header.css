@@ -1,0 +1,160 @@
+@font-face {
+  font-family: "floridaIsland";
+  src: url("./fonts/florida_island.woff"); }
+@font-face {
+  font-family: "futura";
+  src: url("./fonts/futura_medium_bt.woff"); }
+/* Font Colors */
+/* Header Background Colors */
+/* Add Recipe Banner Colors */
+/* Form Background Color */
+header {
+  background-image: url("./images/lime_cove_BEACH_light_header.jpg");
+  background-size: 100%;
+  border-bottom: 1px solid #707070; }
+
+header p {
+  font-family: "futura", sans-serif;
+  font-size: 1.5em;
+  text-align: right;
+  padding-top: 1%;
+  margin-top: 0;
+  margin-right: 2%;
+  margin-bottom: -20px; }
+
+header p a {
+  text-decoration: none;
+  padding: 0.5%; }
+
+#mobile_nav {
+  display: none; }
+
+a.sign_up, a.sign_up:visited {
+  color: #53E564; }
+
+a.sign_up:hover {
+  text-shadow: 2px 2px 2px #D3FD72; }
+
+a.login, a.login:visited {
+  color: #29E9FD; }
+
+a.login:hover {
+  text-shadow: 2px 2px 2px #96F3FE; }
+
+a.logout, a.logout:visited {
+  color: #29E9FD; }
+
+a.logout:hover {
+  text-shadow: 2px 2px 2px #96F3FE; }
+
+li.login_mobile {
+  display: none; }
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0; }
+
+nav ul img {
+  width: 20%; }
+
+nav ul li {
+  font-family: "floridaIsland", sans-serif;
+  font-size: 3vw;
+  list-style: none; }
+
+nav ul li a, nav ul li a:visited {
+  color: #FF3F7A;
+  text-decoration: none; }
+
+nav ul li a:hover {
+  text-shadow: 2px 2px 2px #FBA3C5; }
+
+#account_toolbar {
+  background-color: white;
+  font-family: "floridaIsland", sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+#account_toolbar div:first-of-type {
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  justify-content: space-around;
+  align-content: center; }
+
+#account_toolbar div:first-of-type img {
+  width: 100%;
+  border-radius: 50%;
+  padding: 10px; }
+
+#account_toolbar div:first-of-type h3 {
+  font-family: "futura", sans-serif;
+  align-self: center; }
+
+#account_toolbar div:last-of-type {
+  font-size: 1.5em;
+  letter-space: 2px;
+  width: 20%;
+  display: flex;
+  justify-content: space-between; }
+
+#account_toolbar a, #account_toolbar a:visited {
+  color: #29E9FD;
+  text-decoration: none; }
+
+#account_toolbar a:hover {
+  text-shadow: 2px 2px 2px #96F3FE; }
+
+@media only screen and (max-width: 600px) {
+  header {
+    background-size: cover; }
+
+  #desktop_nav {
+    display: none; }
+
+  .sign_up_login {
+    display: none; }
+
+  #account_toolbar div:last-of-type {
+    display: none; }
+
+  #mobile_nav {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 30%;
+    justify-content: space-between; }
+
+  #mobile_nav img {
+    width: 80%; }
+
+  .menu {
+    display: none;
+    background-color: white;
+    position: absolute;
+    top: 13%;
+    right: 0;
+    left: 0;
+    text-align: center;
+    border: thin solid #707070;
+    padding: 16px 0; }
+
+  .menu li {
+    font-size: 2em; }
+
+  .menu li + li {
+    margin-top: 12px; }
+
+  header input[type=checkbox] {
+    display: none; }
+
+  input[type=checkbox]:checked ~ .menu {
+    display: block; }
+
+  .hamburger {
+    display: block;
+    font-size: 3.5em;
+    padding-top: 8%; } }

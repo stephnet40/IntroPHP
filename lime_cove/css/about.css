@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "floridaIsland";
+  src: url("./fonts/florida_island.woff"); }
+@font-face {
+  font-family: "futura";
+  src: url("./fonts/futura_medium_bt.woff"); }
+/* Font Colors */
+/* Header Background Colors */
+/* Add Recipe Banner Colors */
+/* Form Background Color */
+main {
+  text-align: center; }
+
+#container {
+  background-color: #008CBD;
+  background-image: url("./images/ourstory_beach_top.jpg"), url("./images/ourstory_beach_lower.jpg");
+  background-position: top, bottom;
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 100%; }
+
+#container-inner {
+  background-color: rgba(255, 255, 255, 0.85);
+  width: 85%;
+  padding-bottom: 40px;
+  margin-right: auto;
+  margin-left: auto; }
+
+main h1 {
+  color: #06C8DD;
+  font-size: 4em;
+  letter-spacing: 5px;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 0; }
+
+main img {
+  width: 60%;
+  margin-bottom: 20px; }
+
+main div {
+  padding-top: 40px;
+  padding-bottom: 40px; }
+
+main h3 {
+  font-family: "floridaIsland", sans-serif;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  margin: 0; }
+
+main p.motto {
+  font-style: italic; }
+
+main p {
+  font-family: "futura", sans-serif;
+  font-size: 1.1em;
+  text-align: center;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto; }
+
+main div:last-of-type p:last-of-type {
+  margin-bottom: 0; }
+
+@media only screen and (max-width: 600px) {
+  #container-inner {
+    width: 100%; }
+
+  main h1, main h3 {
+    background-color: #008CBD;
+    color: white; }
+
+  main div {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+
+  main h3 {
+    padding-top: 20px;
+    padding-bottom: 10px; }
+
+  main img {
+    width: 100%;
+    margin-bottom: 0; } }

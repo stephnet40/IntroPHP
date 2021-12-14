@@ -1,0 +1,23 @@
+// Scss Document
+
+@font-face {
+	font-family: "floridaIsland";
+	src: url("../fonts/florida_island.woff")
+}
+
+@font-face {
+	font-family: "futura";
+	src: url("../fonts/futura_medium_bt.woff")
+}
+
+$fontBanner: "floridaIsland", sans-serif;
+
+$fontText: "futura", sans-serif;
+
+body {
+	background-image: url("../images/lime_cove_boardwalk.jpg");
+}
+
+header {
+	background-image: url("../images/lime_cove_BEACH_light_header.jpg");
+}

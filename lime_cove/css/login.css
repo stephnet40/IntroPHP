@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "floridaIsland";
+  src: url("../fonts/florida_island.woff"); }
+@font-face {
+  font-family: "futura";
+  src: url("../fonts/futura_medium_bt.woff"); }
+body {
+  background-image: url("../images/lime_cove_boardwalk.jpg"); }
+
+header {
+  background-image: url("../images/lime_cove_BEACH_light_header.jpg"); }
+
+/* Font Colors */
+/* Header Background Colors */
+/* Add Recipe Banner Colors */
+/* Form Background Color */
+body {
+  background-image: url("../images/login_drinks_bg.jpg");
+  background-size: cover; }
+
+main {
+  text-align: center; }
+
+main h1 {
+  font-family: "floridaIsland", sans-serif;
+  color: #FF3F7A; }
+
+form {
+  background-color: #FFFBEF;
+  font-family: "futura", sans-serif;
+  width: 30%;
+  border-radius: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 80px; }
+
+form div.user_info {
+  display: grid;
+  grid-template-columns: 80%;
+  justify-content: center;
+  margin-bottom: 20px; }
+
+form h3 {
+  color: #29E9FD;
+  font-family: "floridaIsland", sans-serif;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  margin-top: 0; }
+
+form p {
+  font-family: "futura", sans-serif; }
+
+form input {
+  font-size: 1.25em; }
+
+form div.buttons {
+  width: 70%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto; }
+
+div.buttons input {
+  background-color: #29E9FD;
+  color: white;
+  font-size: 2.0em;
+  height: 75px;
+  width: 90%;
+  justify-self: center;
+  border: thin solid #29E9FD;
+  border-radius: 45px; }
+
+div.social_media {
+  display: none; }
+
+@media only screen and (max-width: 600px) {
+  main h1 {
+    background-color: #FF3F7A;
+    color: white;
+    padding: 20px 0;
+    margin: 0; }
+
+  form {
+    width: 90%; }
+
+  div.social_media {
+    display: block; } }

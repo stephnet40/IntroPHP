@@ -1,0 +1,257 @@
+@font-face {
+  font-family: "floridaIsland";
+  src: url("../fonts/florida_island.woff"); }
+@font-face {
+  font-family: "futura";
+  src: url("../fonts/futura_medium_bt.woff"); }
+body {
+  background-image: url("../images/lime_cove_boardwalk.jpg"); }
+
+header {
+  background-image: url("../images/lime_cove_BEACH_light_header.jpg"); }
+
+/* Font Colors */
+/* Header Background Colors */
+/* Add Recipe Banner Colors */
+/* Form Background Color */
+body {
+  background-image: url("../images/seamless_lime.png");
+  background-size: auto;
+  font-family: "floridaIsland", sans-serif;
+  text-align: center; }
+
+div.admin_tool_bar {
+  background-color: white;
+  color: #53E564;
+  font-size: 3.3em;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-column-gap: 15%;
+  justify-content: space-around; }
+
+div.admin_tool_bar div {
+  display: grid;
+  grid-template-columns: 15% 65%;
+  justify-content: center;
+  align-content: baseline; }
+
+div.admin_tool_bar div p {
+  align-self: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin: 0; }
+
+div.admin_tool_bar div:first-of-type {
+  width: 80%;
+  margin-left: 30%; }
+
+div.admin_tool_bar div img {
+  width: 100%;
+  justify-self: end;
+  align-self: center; }
+
+div.admin_tool_bar div:first-of-type a, div.admin_tool_bar div:first-of-type a:visited {
+  color: #53E564;
+  text-decoration: none; }
+
+div.admin_tool_bar div:first-of-type a:hover {
+  text-shadow: 2px 2px 2px #D3FD72; }
+
+div.admin_tool_bar div:last-of-type {
+  grid-template-columns: 50% 50%;
+  justify-content: center; }
+
+div.admin_tool_bar div:last-of-type a, div.admin_tool_bar div:last-of-type a:visited {
+  color: #29E9FD;
+  text-decoration: none; }
+
+div.admin_tool_bar div:last-of-type a:hover {
+  text-shadow: 2px 2px 2px #96F3FE; }
+
+/* Login */
+div.login_header {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 20% 60%;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto; }
+
+div.login_header img {
+  width: 100%;
+  align-self: center; }
+
+img.mobile {
+  display: none; }
+
+div.login_header h1 {
+  color: #53E564;
+  font-family: "floridaIsland", sans-serif;
+  font-size: 5em;
+  letter-spacing: 5px; }
+
+#admin_login form {
+  width: 20%;
+  margin-right: auto;
+  margin-lefT: auto; }
+
+div.login_info {
+  font-family: "futura", sans-serif;
+  font-size: 1.5em;
+  display: grid;
+  grid-template-columns: 100%;
+  margin-bottom: 40px; }
+
+div.login_info input {
+  font-size: 1.25em;
+  border: thin solid #707070;
+  border-radius: 15px; }
+
+#admin_login div.submit_buttons {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-bottom: 80px;
+  margin-left: auto; }
+
+#admin_login input[type=submit], #admin_login input[type=reset] {
+  background-color: #53E564;
+  color: white;
+  font-size: 1.4em;
+  height: 75px;
+  width: 90%;
+  justify-self: center;
+  border: thin solid #53E564;
+  border-radius: 45px; }
+
+#admin_login_footer div.social_media {
+  display: none; }
+
+/* Admin Home */
+div.main {
+  display: grid;
+  grid-template-columns: 35% 35%;
+  justify-content: space-around;
+  margin-right: 5%;
+  margin-left: 5%; }
+
+div.main a, div.main a:visited {
+  color: #53E564;
+  font-size: 1.3em;
+  text-decoration: none; }
+
+div.main a:hover {
+  text-shadow: 2px 2px 2px #D3FD72; }
+
+div.main img {
+  width: 100%; }
+
+/* Admin View All Recipes */
+div.recipe_table {
+  font-family: "futura", sans-serif;
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto; }
+
+div.recipe_table h1 {
+  background-color: #53E564;
+  color: white;
+  font-family: "floridaIsland", sans-serif;
+  font-size: 4em;
+  letter-spacing: 5px;
+  width: 80%;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto; }
+
+div.recipe_table table {
+  background-color: white;
+  border: thin solid #707070;
+  margin-top: 40px;
+  margin-bottom: 40px; }
+
+div.recipe_table table, div.recipe_table th, div.recipe_table td {
+  border: thin solid #707070; }
+
+td.name {
+  padding-right: 1%;
+  padding-left: 1%; }
+
+td.description {
+  padding-right: 3%;
+  padding-left: 3%; }
+
+div.recipe_table img {
+  width: 100%; }
+
+table input[type=button] {
+  height: 25px;
+  width: 25px;
+  cursor: pointer; }
+
+@media only screen and (max-width: 600px) {
+  #admin_login form {
+    width: 90%;
+    margin-top: 40px; }
+
+  div.login_header {
+    background-color: #53E564;
+    width: 100%; }
+
+  img.desktop {
+    display: none; }
+
+  img.mobile {
+    display: inline-block; }
+
+  div.login_header h1 {
+    color: white;
+    font-size: 2.2em;
+    padding-top: 20px; }
+
+  #admin_login_footer div.social_media {
+    display: block; }
+
+  div.admin_tool_bar {
+    grid-template-columns: 100%; }
+
+  div.admin_tool_bar div:first-of-type {
+    background-color: #53E564;
+    width: 100%;
+    margin: 0; }
+
+  div.admin_tool_bar div:first-of-type p {
+    font-size: 0.75em; }
+
+  div.admin_tool_bar div:first-of-type p a, div.admin_tool_bar div:first-of-type p a:visited {
+    color: white; }
+
+  div.admin_tool_bar div.admin_links {
+    display: none; }
+
+  div.recipe_table {
+    width: 100%;
+    margin: 0; }
+
+  div.recipe_table h1 {
+    background-color: white;
+    color: #53E564;
+    font-size: 2.0em;
+    width: 100%;
+    border: thin solid #707070;
+    margin: 0; }
+
+  div.recipe_table table {
+    margin-right: auto;
+    margin-left: auto; }
+
+  div.recipe_table .image, div.recipe_table .description {
+    display: none; }
+
+  div.main {
+    background-color: white;
+    grid-template-columns: 100%;
+    margin: 0; } }

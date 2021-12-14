@@ -1,0 +1,254 @@
+// Scss Document
+
+@import "fonts.scss";
+@import "colors.scss";
+
+#container {
+	background-color: rgba(0, 0, 0, 0.00);
+	width: 100%;
+}
+
+h2.mobile_name {
+	display: none;
+}
+
+div.carousel {
+	display: none;
+}
+
+main section {
+	background-color: $backgroundWhite;
+}
+
+main section:not(#recipe_categories) {
+	width: 85%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+main section#newest_recipes, main section#chicken_recipes {
+	padding-bottom: 40px;
+}
+
+main section#popular_recipes, main section#featured_recipe {
+	padding-top: 40px;
+}
+
+main section h3 {
+	font-family: $fontText;
+	text-align: center;
+}
+
+main section a, main section a:visited {
+	color: black;
+	text-decoration: none;
+} 
+
+main section a:hover {
+	text-shadow: 2px 2px 2px $headerGreen;
+}
+
+main div.section_container {
+	border: 1px solid #707070;
+}
+
+main section h1 {
+	font-size: 2.5em;
+	padding-top: 2.5%;
+	padding-bottom: 2%;
+	margin: 0;
+}
+
+main section p {
+	background-color: rgba(255,255,255,0.65);
+	font-family: "floridaIsland", sans-serif;
+}
+
+main section div div {
+	background-color: white;
+	display: flex;
+	justify-content: center;
+}
+
+/* Featured Recipe */
+
+#featured_recipe div {
+	width: 85%;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#featured_recipe img {
+	width: 100%;
+}
+
+#featured_recipe div div {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 100%;
+}
+
+#featured_recipe h2 {
+	background-color: $headerGreen;
+	font-family: $fontBanner;
+	font-size: 1.75em;
+	letter-spacing: 0.12em;
+	text-align: center;
+	max-height: 75px;
+	padding-top: 4%;
+	padding-bottom: 3%;
+	margin: 0;
+}
+
+#featured_recipe a, #featured_recipe a:visited {
+	color: black;
+	text-decoration: none;
+	height: auto;
+	margin: 0;
+}
+
+#featured_recipe a:hover {
+	text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.9);
+}
+
+#featured_recipe p {
+	font-family: $fontText;
+	font-size: 1.35em;
+	text-align: center;
+	padding-right: 3%;
+	padding-left: 3%;
+}
+
+/* Newest Recipes */
+#newest_recipes h1 {
+	background-color: $headerBlue;
+}
+
+div.newest_thumbnails {
+	display: grid;
+	grid-template-columns: 20% 20% 20% 20%;
+	justify-content: space-around;
+	padding-top: 3%;
+	padding-right: 2%;
+	padding-left: 2%;
+}
+
+div.newest_thumbnails div {
+	display: grid;
+	grid-template-columns: 100%;
+}
+
+div.newest_thumbnails img {
+	width: 100%;
+}
+
+/* Recipe Categories */
+#recipe_categories div div div {
+	width: 15%;
+	position: relative;
+	margin-top: 20px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+}
+
+#recipe_categories div div p {
+	font-size: 2.43vw;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	padding-top: 40%;
+}
+
+#recipe_categories div div img {
+	width: 100%;
+	border-radius: 50%;
+}
+
+#recipe_categories h1 {
+	background-color: $headerPink;
+}
+
+#recipe_categories a:visited {
+	color: black;
+}
+
+/* Quick Recipes */
+#popular_recipes h1 {
+	background-color: $headerOrange;
+}
+
+/* Chicken Recipes */
+
+#chicken_recipes h1 {
+	background-color: $headerGreen;
+}
+
+@media only screen and (max-width: 600px) {
+	
+	#featured_recipe div {
+		width: 100%;
+		grid-template-columns: 100%;
+	}
+	
+	#recipe_categories div.section_container {
+		display: none;
+	}
+	
+	#recipe_categories div.carousel-inner {
+		height: 80%;
+	}
+	
+	#recipe_categories div.carousel-item {
+		width: 100%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	
+	#recipe_categories div div p {
+		font-size: 5em;
+		top: 50%;
+	}
+	
+	h2.recipe_name {
+		display: none;
+	}
+	
+	h2.mobile_name {
+		display: block;
+	}
+	
+	main section#newest_recipes, main section#chicken_recipes, main section#popular_recipes, main section#featured_recipe {
+		padding: 0;
+	}
+	
+	main section:not(#recipe_categories) {
+		width: 100%;
+	}
+	
+	div.carousel-inner {
+		display: block;
+	}
+	
+	div.newest_thumbnails {
+		display: none;
+	}
+	
+	div.carousel {
+		height: 100%;
+		display: block;
+	}
+	
+	div.carousel-item img {
+		width: 100%;
+	}
+}

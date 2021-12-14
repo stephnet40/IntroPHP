@@ -1,0 +1,88 @@
+// Scss Document
+
+@import "fonts.scss";
+@import "colors.scss";
+
+footer {
+	background-color: white;
+	font-family: $fontText;
+	display: grid;
+	grid-template-columns: 30% 30% 30%;
+	justify-content: space-around;
+	border-top: 1px solid #707070;;
+}
+
+div.mobile_copyright {
+	display: none;
+}
+
+footer div {
+	text-align: center;
+	display: grid;
+	grid-template-columns: 100%;
+}
+
+footer ul {
+	list-style: none;
+}
+
+footer ul a, footer ul a:visited {
+	color: $fontGreen;
+	text-decoration: none;
+}
+
+footer div:nth-of-type(2) img {
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+footer p {
+	color: $fontPink;
+}
+
+footer h3 {
+	color: $fontGreen;
+}
+
+// Social media icons
+footer div div { 
+	width: 100%;
+	display: grid;
+	grid-template-columns: 30% 30% 30%;
+	justify-content: space-around;
+}
+
+footer div div img {
+	border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+	
+	footer div:not(.social_media) {
+		display: none;
+	}
+	
+	footer {
+		grid-template-columns: 100%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	
+	footer h3 {
+		color: $fontBlue;
+		font-size: 3em;
+	}
+	
+	div.mobile_copyright a, div.mobile_copyright a:visited {
+		color: $fontPink;
+		text-decoration: underline;
+	}
+	
+	div.mobile_copyright {
+		color: $fontPink;
+		display: block;
+		padding-top: 20px;
+	}
+	
+}

@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "floridaIsland";
+  src: url("../fonts/florida_island.woff"); }
+@font-face {
+  font-family: "futura";
+  src: url("../fonts/futura_medium_bt.woff"); }
+body {
+  background-image: url("../images/lime_cove_boardwalk.jpg"); }
+
+header {
+  background-image: url("../images/lime_cove_BEACH_light_header.jpg"); }
+
+/* Font Colors */
+/* Header Background Colors */
+/* Add Recipe Banner Colors */
+/* Form Background Color */
+main h1 {
+  background-color: #53E564;
+  color: white;
+  font-family: "floridaIsland", sans-serif;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin: 0 0 40px 0; }
+
+div.recipe_card {
+  background-color: white;
+  font-family: "futura", sans-serif;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  border: thin solid #707070;
+  margin-right: auto;
+  margin-left: auto; }
+
+div.panel {
+  display: grid;
+  grid-template-columns: 30% 60%;
+  grid-column-gap: 5%;
+  max-height: 0;
+  padding-right: 2%;
+  padding-left: 2%;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out; }
+
+div.panel img.recipe_image {
+  width: 100%;
+  padding-top: 20px; }
+
+button.recipe_title, div.ingredients, div.directions {
+  grid-column: 1 / span 2; }
+
+button.recipe_title {
+  background-color: #F85C8D;
+  font-family: "futura", sans-serif;
+  font-size: 1.4em;
+  text-align: left;
+  border: none;
+  padding: 2%;
+  margin: 0; }
+
+div.recipe_card p img {
+  width: 20%; }
+
+@media only screen and (max-width: 600px) {
+  main {
+    background-color: #FFFBEF;
+    padding-bottom: 400px; }
+
+  #container {
+    width: 100%; }
+
+  div.panel {
+    grid-template-columns: 100%; }
+
+  button.recipe_title, div.ingredients, div.directions {
+    grid-column: 1 / span 1; } }

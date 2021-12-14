@@ -1,0 +1,79 @@
+// Scss Document
+
+@import "url_paths.scss";
+@import "colors.scss";
+
+main h1 {
+	background-color: $recipeGreen;
+	color: white;
+	font-family: $fontBanner;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	margin: 0 0 40px 0;
+}
+
+div.recipe_card {
+	background-color: white;
+	font-family: $fontText;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 100%;
+	border: thin solid $borderGray;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+div.panel {
+	display: grid;
+	grid-template-columns: 30% 60%;
+	grid-column-gap: 5%;
+	max-height: 0;
+	padding-right: 2%;
+	padding-left: 2%;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+
+div.panel img.recipe_image {
+	width: 100%;
+	padding-top: 20px;
+}
+
+button.recipe_title, div.ingredients, div.directions {
+	grid-column: 1 / span 2;
+}
+
+button.recipe_title {
+	background-color: $recipePink;
+	font-family: $fontText;
+	font-size: 1.4em;
+	text-align: left;
+	border: none;
+	padding: 2%;
+	margin: 0;
+}
+
+div.recipe_card p img {
+	width: 20%;
+}
+
+@media only screen and (max-width: 600px) {
+	
+	main {
+		background-color: $backgroundWhite;
+		padding-bottom: 400px;
+	}
+	
+	#container {
+		width: 100%;
+	}
+	
+	div.panel {
+		grid-template-columns: 100%;
+	}
+	
+	button.recipe_title, div.ingredients, div.directions {
+	grid-column: 1 / span 1;
+}
+	
+}

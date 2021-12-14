@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "floridaIsland";
+  src: url("../fonts/florida_island.woff"); }
+@font-face {
+  font-family: "futura";
+  src: url("../fonts/futura_medium_bt.woff"); }
+body {
+  background-image: url("../images/lime_cove_boardwalk.jpg"); }
+
+header {
+  background-image: url("../images/lime_cove_BEACH_light_header.jpg"); }
+
+/* Font Colors */
+/* Header Background Colors */
+/* Add Recipe Banner Colors */
+/* Form Background Color */
+body {
+  background-image: none;
+  background-color: #FFFBEF; }
+
+main {
+  display: grid;
+  grid-template-columns: 50% 50%; }
+
+main h1 {
+  color: #29E9FD;
+  font-size: 3.8em;
+  letter-spacing: 5px;
+  margin-bottom: 0; }
+
+p.mobile_text {
+  display: none; }
+
+main h1 + p {
+  font-family: "futura", sans-serif;
+  font-size: 1.25em;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto; }
+
+main img {
+  width: 100%;
+  margin-bottom: -4px; }
+
+main form {
+  background-image: url("../images/signup_phone_img.jpg");
+  background-size: cover;
+  width: 60%;
+  margin-bottom: 0; }
+
+main form a, main form a:visited {
+  color: black; }
+
+div.buttons input {
+  background-color: #F85C8D;
+  border-color: #F85C8D; }
+
+@media only screen and (max-width: 600px) {
+  main {
+    grid-template-columns: 100%; }
+
+  main h1 {
+    background-color: #29E9FD;
+    color: white;
+    font-size: 2em; }
+
+  p.desktop_text {
+    display: none; }
+
+  p.mobile_text {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 30px; }
+
+  main form {
+    width: 100%;
+    border-radius: 0;
+    padding-top: 10px; } }
